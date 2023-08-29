@@ -82,7 +82,7 @@ function ClerkProviderWithRoutes() {
     if (storedRoleReady) {
       setRoleReady(storedRoleReady);
     }
-    //---------------//
+
     const checkAccess = async () => {
       if (
         isEmployee !== undefined &&
