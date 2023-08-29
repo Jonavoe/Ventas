@@ -55,11 +55,12 @@ import { ContratandoLeader } from "./components/Lideres/Contratando/ContratandoL
 import { Promociones } from "./components/Lideres/Promociones/Promociones";
 const { CLERK_API_KEY } = import.meta.env;
 
-if (!"pk_test_Z3VpZGVkLWtvZGlhay0xMi5jbGVyay5hY2NvdW50cy5kZXYk") {
+if (!"pk_test_c3RpcnJpbmctdXJjaGluLTk2LmNsZXJrLmFjY291bnRzLmRldiQ") {
   throw new Error("Missing Publishable Key");
 }
 
-const clerkPubKey = "pk_test_Z3VpZGVkLWtvZGlhay0xMi5jbGVyay5hY2NvdW50cy5kZXYk";
+const clerkPubKey =
+  "pk_test_c3RpcnJpbmctdXJjaGluLTk2LmNsZXJrLmFjY291bnRzLmRldiQ";
 
 function ClerkProviderWithRoutes() {
   const navigate = useNavigate();
