@@ -53,6 +53,7 @@ import PagoOk from "./components/PagosInfo/PagoOk";
 import PromocionPago from "./components/PagosInfo/PromocionPago";
 import { ContratandoLeader } from "./components/Lideres/Contratando/ContratandoLeader";
 import { Promociones } from "./components/Lideres/Promociones/Promociones";
+import RegisterEmpleados from "./components/Register/RegisterEmpleados";
 const { CLERK_API_KEY } = import.meta.env;
 
 if (!"pk_test_c3RpcnJpbmctdXJjaGluLTk2LmNsZXJrLmFjY291bnRzLmRldiQ") {
@@ -139,6 +140,7 @@ function ClerkProviderWithRoutes() {
   return (
     <>
       <Routes>
+        <Route path="/register" element={<RegisterEmpleados />} />
         <Route path="/pago-ok" element={<PagoOk />} />
         <Route path="/pagos-sml" element={<PagosInfo />} />
         <Route
