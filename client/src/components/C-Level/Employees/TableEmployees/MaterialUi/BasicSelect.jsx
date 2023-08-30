@@ -52,11 +52,10 @@ export default function BasicSelect({ employees, setEmployees }) {
           label="Employees"
           onChange={handleChange}
         >
-          {/* {role && role === "clevel" ? (
+          {role && role === "clevel" ? (
             <StyledMenuItem value={"clevel"}>C-Level</StyledMenuItem>
-            // ) : null} */}
-          <StyledMenuItem value={"clevel"}>C-Level</StyledMenuItem>
-          {/* <StyledMenuItem value={"leader"}>Leader</StyledMenuItem> */}
+          ) : null}
+          <StyledMenuItem value={"leader"}>Leader</StyledMenuItem>
           <StyledMenuItem value={"corredor"}>Corredor</StyledMenuItem>
           <StyledMenuItem value={"vendedor"}>Vendedor</StyledMenuItem>
           <StyledMenuItem value={"freelancer"}>Freelancer</StyledMenuItem>
