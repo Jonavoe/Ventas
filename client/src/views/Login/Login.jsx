@@ -4,11 +4,13 @@ import CustomizedButtons from "./Material UI/loginButton";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
+import axios from "axios"
 
 export default function Login() {
   const navigate = useNavigate();
   const access = useSelector((state) => state.isEmployee);
-  const clevelLanding = () => {
+  const clevelLanding = async () => {
+    await axios.put("/lead/limpieza")
     navigate("/register");
   };
   return (
